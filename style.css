@@ -1,0 +1,66 @@
+body {
+    background: linear-gradient(77deg, rgb(152, 207, 195), rgb(86, 181, 184));
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+input {
+    border-radius: 5px;
+    margin: 25px;
+    height: 30px;
+    width: 180px;
+    background: -webkit-linear-gradient(180deg, rgb(152, 207, 195), rgb(150, 182, 82));
+    background: -moz-linear-gradient(180deg, rgb(152, 207, 195), rgb(150, 182, 82));
+    background: linear-gradient(180deg, rgb(152, 207, 195), rgb(150, 182, 82));
+}
+
+
+#button {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #fddb92, #d1fdff);
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.39, 0.58, 0.44, 0.94);
+}
+
+#button:hover {
+    cursor: pointer;
+    transform: translateX(1px);
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(79, 80, 34, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(79, 80, 34, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(79, 80, 34, 0.2);
+}
+
+#button:active {
+    cursor: wait;
+}
+
+.test {
+    animation-name: hide;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+    animation-iteration-count: 1;
+}
+
+.result {
+    display: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 18px;
+}
+
+
+@keyframes hide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 200;
+    }
+}
